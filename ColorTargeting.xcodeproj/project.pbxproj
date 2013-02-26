@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6A6E8E16DC72C2000C1DA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A6E8D16DC72C2000C1DA9 /* Cocoa.framework */; };
+		0F6A6E9816DC72C2000C1DA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A6E9616DC72C2000C1DA9 /* InfoPlist.strings */; };
+		0F6A6E9A16DC72C2000C1DA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6E9916DC72C2000C1DA9 /* main.m */; };
+		0F6A6E9E16DC72C2000C1DA9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A6E9C16DC72C2000C1DA9 /* Credits.rtf */; };
+		0F6A6EA116DC72C2000C1DA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EA016DC72C2000C1DA9 /* AppDelegate.m */; };
+		0F6A6EA416DC72C2000C1DA9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A6EA216DC72C2000C1DA9 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F6A6E8916DC72C2000C1DA9 /* ColorTargeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorTargeting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6A6E8D16DC72C2000C1DA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0F6A6E9016DC72C2000C1DA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0F6A6E9116DC72C2000C1DA9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0F6A6E9216DC72C2000C1DA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F6A6E9516DC72C2000C1DA9 /* ColorTargeting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorTargeting-Info.plist"; sourceTree = "<group>"; };
+		0F6A6E9716DC72C2000C1DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F6A6E9916DC72C2000C1DA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F6A6E9B16DC72C2000C1DA9 /* ColorTargeting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorTargeting-Prefix.pch"; sourceTree = "<group>"; };
+		0F6A6E9D16DC72C2000C1DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0F6A6E9F16DC72C2000C1DA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0F6A6EA016DC72C2000C1DA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0F6A6EA316DC72C2000C1DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F6A6E8616DC72C2000C1DA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6A6E8E16DC72C2000C1DA9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F6A6E7E16DC72C2000C1DA9 = {
+			isa = PBXGroup;
+			children = (
+				0F6A6E9316DC72C2000C1DA9 /* ColorTargeting */,
+				0F6A6E8C16DC72C2000C1DA9 /* Frameworks */,
+				0F6A6E8A16DC72C2000C1DA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F6A6E8A16DC72C2000C1DA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F6A6E8916DC72C2000C1DA9 /* ColorTargeting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F6A6E8C16DC72C2000C1DA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F6A6E8D16DC72C2000C1DA9 /* Cocoa.framework */,
+				0F6A6E8F16DC72C2000C1DA9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F6A6E8F16DC72C2000C1DA9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F6A6E9016DC72C2000C1DA9 /* AppKit.framework */,
+				0F6A6E9116DC72C2000C1DA9 /* CoreData.framework */,
+				0F6A6E9216DC72C2000C1DA9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0F6A6E9316DC72C2000C1DA9 /* ColorTargeting */ = {
+			isa = PBXGroup;
+			children = (
+				0F6A6E9F16DC72C2000C1DA9 /* AppDelegate.h */,
+				0F6A6EA016DC72C2000C1DA9 /* AppDelegate.m */,
+				0F6A6EA216DC72C2000C1DA9 /* MainMenu.xib */,
+				0F6A6E9416DC72C2000C1DA9 /* Supporting Files */,
+			);
+			path = ColorTargeting;
+			sourceTree = "<group>";
+		};
+		0F6A6E9416DC72C2000C1DA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F6A6E9516DC72C2000C1DA9 /* ColorTargeting-Info.plist */,
+				0F6A6E9616DC72C2000C1DA9 /* InfoPlist.strings */,
+				0F6A6E9916DC72C2000C1DA9 /* main.m */,
+				0F6A6E9B16DC72C2000C1DA9 /* ColorTargeting-Prefix.pch */,
+				0F6A6E9C16DC72C2000C1DA9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F6A6E8816DC72C2000C1DA9 /* ColorTargeting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F6A6EA716DC72C2000C1DA9 /* Build configuration list for PBXNativeTarget "ColorTargeting" */;
+			buildPhases = (
+				0F6A6E8516DC72C2000C1DA9 /* Sources */,
+				0F6A6E8616DC72C2000C1DA9 /* Frameworks */,
+				0F6A6E8716DC72C2000C1DA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorTargeting;
+			productName = ColorTargeting;
+			productReference = 0F6A6E8916DC72C2000C1DA9 /* ColorTargeting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F6A6E8016DC72C2000C1DA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Michael Go";
+			};
+			buildConfigurationList = 0F6A6E8316DC72C2000C1DA9 /* Build configuration list for PBXProject "ColorTargeting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F6A6E7E16DC72C2000C1DA9;
+			productRefGroup = 0F6A6E8A16DC72C2000C1DA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F6A6E8816DC72C2000C1DA9 /* ColorTargeting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F6A6E8716DC72C2000C1DA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6A6E9816DC72C2000C1DA9 /* InfoPlist.strings in Resources */,
+				0F6A6E9E16DC72C2000C1DA9 /* Credits.rtf in Resources */,
+				0F6A6EA416DC72C2000C1DA9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F6A6E8516DC72C2000C1DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6A6E9A16DC72C2000C1DA9 /* main.m in Sources */,
+				0F6A6EA116DC72C2000C1DA9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F6A6E9616DC72C2000C1DA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F6A6E9716DC72C2000C1DA9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F6A6E9C16DC72C2000C1DA9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F6A6E9D16DC72C2000C1DA9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0F6A6EA216DC72C2000C1DA9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F6A6EA316DC72C2000C1DA9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F6A6EA516DC72C2000C1DA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F6A6EA616DC72C2000C1DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0F6A6EA816DC72C2000C1DA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorTargeting/ColorTargeting-Prefix.pch";
+				INFOPLIST_FILE = "ColorTargeting/ColorTargeting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F6A6EA916DC72C2000C1DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorTargeting/ColorTargeting-Prefix.pch";
+				INFOPLIST_FILE = "ColorTargeting/ColorTargeting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F6A6E8316DC72C2000C1DA9 /* Build configuration list for PBXProject "ColorTargeting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6A6EA516DC72C2000C1DA9 /* Debug */,
+				0F6A6EA616DC72C2000C1DA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F6A6EA716DC72C2000C1DA9 /* Build configuration list for PBXNativeTarget "ColorTargeting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6A6EA816DC72C2000C1DA9 /* Debug */,
+				0F6A6EA916DC72C2000C1DA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F6A6E8016DC72C2000C1DA9 /* Project object */;
+}
