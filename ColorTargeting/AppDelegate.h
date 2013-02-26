@@ -7,8 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <QTKit/QTKit.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    IBOutlet QTCaptureView *captureView;
+    
+    QTCaptureSession *captureSession;
+    QTCaptureMovieFileOutput *captureFileOutput;
+    QTCaptureDeviceInput *captureVideoDeviceInput;
+    QTCaptureDeviceInput *captureAudioDeviceInput;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 

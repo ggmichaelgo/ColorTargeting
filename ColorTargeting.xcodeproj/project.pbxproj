@@ -13,6 +13,11 @@
 		0F6A6E9E16DC72C2000C1DA9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A6E9C16DC72C2000C1DA9 /* Credits.rtf */; };
 		0F6A6EA116DC72C2000C1DA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EA016DC72C2000C1DA9 /* AppDelegate.m */; };
 		0F6A6EA416DC72C2000C1DA9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A6EA216DC72C2000C1DA9 /* MainMenu.xib */; };
+		0F6A6EAB16DC72DA000C1DA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A6EAA16DC72DA000C1DA9 /* QuartzCore.framework */; };
+		0F6A6EAD16DC72E3000C1DA9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A6EAC16DC72E3000C1DA9 /* CoreVideo.framework */; };
+		0F6A6EAF16DC72E9000C1DA9 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A6EAE16DC72E9000C1DA9 /* QTKit.framework */; };
+		0F6A6EC316DC77F7000C1DA9 /* ColorLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EC216DC77F7000C1DA9 /* ColorLocator.m */; };
+		0F6A6EC716DC7902000C1DA9 /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EC616DC7901000C1DA9 /* Coordinate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,13 @@
 		0F6A6E9F16DC72C2000C1DA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F6A6EA016DC72C2000C1DA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0F6A6EA316DC72C2000C1DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0F6A6EAA16DC72DA000C1DA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0F6A6EAC16DC72E3000C1DA9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0F6A6EAE16DC72E9000C1DA9 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		0F6A6EC116DC77F7000C1DA9 /* ColorLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLocator.h; sourceTree = "<group>"; };
+		0F6A6EC216DC77F7000C1DA9 /* ColorLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorLocator.m; sourceTree = "<group>"; };
+		0F6A6EC516DC7901000C1DA9 /* Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinate.h; sourceTree = "<group>"; };
+		0F6A6EC616DC7901000C1DA9 /* Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coordinate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6A6EAF16DC72E9000C1DA9 /* QTKit.framework in Frameworks */,
+				0F6A6EAD16DC72E3000C1DA9 /* CoreVideo.framework in Frameworks */,
+				0F6A6EAB16DC72DA000C1DA9 /* QuartzCore.framework in Frameworks */,
 				0F6A6E8E16DC72C2000C1DA9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +78,9 @@
 		0F6A6E8C16DC72C2000C1DA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F6A6EAE16DC72E9000C1DA9 /* QTKit.framework */,
+				0F6A6EAC16DC72E3000C1DA9 /* CoreVideo.framework */,
+				0F6A6EAA16DC72DA000C1DA9 /* QuartzCore.framework */,
 				0F6A6E8D16DC72C2000C1DA9 /* Cocoa.framework */,
 				0F6A6E8F16DC72C2000C1DA9 /* Other Frameworks */,
 			);
@@ -82,6 +100,7 @@
 		0F6A6E9316DC72C2000C1DA9 /* ColorTargeting */ = {
 			isa = PBXGroup;
 			children = (
+				0F6A6EC016DC77A2000C1DA9 /* Infrastructure */,
 				0F6A6E9F16DC72C2000C1DA9 /* AppDelegate.h */,
 				0F6A6EA016DC72C2000C1DA9 /* AppDelegate.m */,
 				0F6A6EA216DC72C2000C1DA9 /* MainMenu.xib */,
@@ -100,6 +119,18 @@
 				0F6A6E9C16DC72C2000C1DA9 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F6A6EC016DC77A2000C1DA9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0F6A6EC116DC77F7000C1DA9 /* ColorLocator.h */,
+				0F6A6EC216DC77F7000C1DA9 /* ColorLocator.m */,
+				0F6A6EC516DC7901000C1DA9 /* Coordinate.h */,
+				0F6A6EC616DC7901000C1DA9 /* Coordinate.m */,
+			);
+			name = Infrastructure;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +199,8 @@
 			files = (
 				0F6A6E9A16DC72C2000C1DA9 /* main.m in Sources */,
 				0F6A6EA116DC72C2000C1DA9 /* AppDelegate.m in Sources */,
+				0F6A6EC316DC77F7000C1DA9 /* ColorLocator.m in Sources */,
+				0F6A6EC716DC7902000C1DA9 /* Coordinate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
