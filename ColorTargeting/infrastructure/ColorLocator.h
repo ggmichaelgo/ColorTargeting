@@ -13,10 +13,12 @@
 {
     int height;
     int width;
-    char *map;
 }
 
--(Coordinate*) levelSearch: (int) level;
--(Coordinate*) findColor: (char*) map;
+@property (readwrite, assign) int height, width;
+
+-(ColorLocator*) init:(int)w height:(int)h;
+-(Coordinate*) levelSearch: (int) level MAP:(unsigned char *)map;
+-(Coordinate*) findColor: (unsigned char*) map;
 
 @end

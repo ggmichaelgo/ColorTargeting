@@ -12,6 +12,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
     IBOutlet QTCaptureView *captureView;
+    IBOutlet NSImageView *imageView;
     
     QTCaptureSession *captureSession;
     QTCaptureMovieFileOutput *captureFileOutput;
@@ -20,5 +21,7 @@
 }
 
 @property (assign) IBOutlet NSWindow *window;
+
+- (CIImage *)drawBox:(CIImage *) image;
 
 @end

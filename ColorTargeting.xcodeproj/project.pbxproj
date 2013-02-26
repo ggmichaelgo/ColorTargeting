@@ -16,8 +16,9 @@
 		0F6A6EAB16DC72DA000C1DA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A6EAA16DC72DA000C1DA9 /* QuartzCore.framework */; };
 		0F6A6EAD16DC72E3000C1DA9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A6EAC16DC72E3000C1DA9 /* CoreVideo.framework */; };
 		0F6A6EAF16DC72E9000C1DA9 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6A6EAE16DC72E9000C1DA9 /* QTKit.framework */; };
-		0F6A6EC316DC77F7000C1DA9 /* ColorLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EC216DC77F7000C1DA9 /* ColorLocator.m */; };
-		0F6A6EC716DC7902000C1DA9 /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EC616DC7901000C1DA9 /* Coordinate.m */; };
+		0F6A6EE916DC871C000C1DA9 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EE416DC871C000C1DA9 /* Color.m */; };
+		0F6A6EEA16DC871C000C1DA9 /* ColorLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EE616DC871C000C1DA9 /* ColorLocator.m */; };
+		0F6A6EEB16DC871C000C1DA9 /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A6EE816DC871C000C1DA9 /* Coordinate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +38,12 @@
 		0F6A6EAA16DC72DA000C1DA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F6A6EAC16DC72E3000C1DA9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		0F6A6EAE16DC72E9000C1DA9 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
-		0F6A6EC116DC77F7000C1DA9 /* ColorLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLocator.h; sourceTree = "<group>"; };
-		0F6A6EC216DC77F7000C1DA9 /* ColorLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorLocator.m; sourceTree = "<group>"; };
-		0F6A6EC516DC7901000C1DA9 /* Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinate.h; sourceTree = "<group>"; };
-		0F6A6EC616DC7901000C1DA9 /* Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coordinate.m; sourceTree = "<group>"; };
+		0F6A6EE316DC871C000C1DA9 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Color.h; path = ColorTargeting/infrastructure/Color.h; sourceTree = "<group>"; };
+		0F6A6EE416DC871C000C1DA9 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Color.m; path = ColorTargeting/infrastructure/Color.m; sourceTree = "<group>"; };
+		0F6A6EE516DC871C000C1DA9 /* ColorLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorLocator.h; path = ColorTargeting/infrastructure/ColorLocator.h; sourceTree = "<group>"; };
+		0F6A6EE616DC871C000C1DA9 /* ColorLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorLocator.m; path = ColorTargeting/infrastructure/ColorLocator.m; sourceTree = "<group>"; };
+		0F6A6EE716DC871C000C1DA9 /* Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coordinate.h; path = ColorTargeting/infrastructure/Coordinate.h; sourceTree = "<group>"; };
+		0F6A6EE816DC871C000C1DA9 /* Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coordinate.m; path = ColorTargeting/infrastructure/Coordinate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +127,12 @@
 		0F6A6EC016DC77A2000C1DA9 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				0F6A6EC116DC77F7000C1DA9 /* ColorLocator.h */,
-				0F6A6EC216DC77F7000C1DA9 /* ColorLocator.m */,
-				0F6A6EC516DC7901000C1DA9 /* Coordinate.h */,
-				0F6A6EC616DC7901000C1DA9 /* Coordinate.m */,
+				0F6A6EE316DC871C000C1DA9 /* Color.h */,
+				0F6A6EE416DC871C000C1DA9 /* Color.m */,
+				0F6A6EE516DC871C000C1DA9 /* ColorLocator.h */,
+				0F6A6EE616DC871C000C1DA9 /* ColorLocator.m */,
+				0F6A6EE716DC871C000C1DA9 /* Coordinate.h */,
+				0F6A6EE816DC871C000C1DA9 /* Coordinate.m */,
 			);
 			name = Infrastructure;
 			path = ..;
@@ -199,8 +204,9 @@
 			files = (
 				0F6A6E9A16DC72C2000C1DA9 /* main.m in Sources */,
 				0F6A6EA116DC72C2000C1DA9 /* AppDelegate.m in Sources */,
-				0F6A6EC316DC77F7000C1DA9 /* ColorLocator.m in Sources */,
-				0F6A6EC716DC7902000C1DA9 /* Coordinate.m in Sources */,
+				0F6A6EE916DC871C000C1DA9 /* Color.m in Sources */,
+				0F6A6EEA16DC871C000C1DA9 /* ColorLocator.m in Sources */,
+				0F6A6EEB16DC871C000C1DA9 /* Coordinate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

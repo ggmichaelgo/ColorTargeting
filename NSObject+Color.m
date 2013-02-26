@@ -1,18 +1,13 @@
 //
-//  Coordinate.h
+//  NSObject+Color.m
 //  ColorTargeting
 //
 //  Created by Michael Go on 13-02-26.
 //  Copyright (c) 2013 Michael Go. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSObject+Color.h"
 
-@interface Coordinate : NSObject
-{
-    int x;
-    int y;
-    int size; 
-}
+@implementation NSObject (Color)
 
 @end

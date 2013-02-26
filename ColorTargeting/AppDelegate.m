@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "infrastructure/Color.h"
+#import "infrastructure/ColorLocator.h"
+#import "infrastructure/Coordinate.h"
 
 @implementation AppDelegate
 
@@ -47,19 +50,51 @@
     }
 }
 
+- (CIImage *)drawBox:(CIImage *) ciImage BOX:(Coordinate *)box
+{
+    NSImage *image = [[[NSImage alloc] initWithSize: [ciImage extent].size] autorelease];
+    [image lockFocus];
+    CGContextRef contextRef = [[NSGraphicsContext currentContext] graphicsPort];
+    CIContext *ciContext =	[CIContext contextWithCGContext:contextRef options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:kCIContextUseSoftwareRenderer]];
+    
+    [ciContext drawImage:ciImage atPoint:CGPointMake(0, 0) fromRect:[ciImage extent]];
+    [[NSColor redColor] setFill];
+	//Does not leak when using the software renderer!
+    [image setSize:NSMakeSize(640, 480)];
+    [NSBezierPath fillRect:NSMakeRect(box.x, 480-box.y, box.size, box.size)];
+    [image unlockFocus];
+    
+    NSData  * tiffData = [image TIFFRepresentation];
+    NSBitmapImageRep * bitmap;
+    bitmap = [NSBitmapImageRep imageRepWithData:tiffData];
+    [imageView setImage:image];
+    return [[CIImage alloc] initWithBitmapImageRep:bitmap];
+}
 
 - (CIImage *)view:(QTCaptureView *)view willDisplayImage:(CIImage *)ciImage
 {
-    int width = [ciImage extent].size.width;
-    int rows = [ciImage extent].size.height;
-    int rowBytes = (width * 4);
+    CIContext *context_i = [CIContext contextWithOptions:nil];
+    CGImageRef imageRef = [context_i createCGImage:ciImage fromRect:ciImage.extent];
+    int width = CGImageGetWidth(imageRef);
+    int height = CGImageGetHeight(imageRef);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    unsigned char *rawData = (unsigned char*) calloc(height * width * 4, sizeof(unsigned char));
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+                                                 bitsPerComponent, bytesPerRow, colorSpace,
+                                                 kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGColorSpaceRelease(colorSpace);    
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
     
-    NSBitmapImageRep* rep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:nil pixelsWide:width pixelsHigh:rows bitsPerSample:8 samplesPerPixel:4 hasAlpha:YES isPlanar:NO colorSpaceName:NSCalibratedRGBColorSpace bitmapFormat:0 bytesPerRow:rowBytes bitsPerPixel:0];
+    ColorLocator *locator = [[ColorLocator alloc] init:width height:height];
+    Coordinate *coor = [locator findColor:rawData];
+    if(coor != nil)
+        NSLog(@"%d %d %d", coor.x, coor.y, coor.size);
 
-    char *map =[rep bitmapData];
-    
-    
-    
+    [locator dealloc];
+    [self drawBox:ciImage BOX:coor];
     return ciImage;
 }
 
